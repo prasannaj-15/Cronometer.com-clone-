@@ -1,0 +1,184 @@
+/* Common CSS */
+
+p{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.125em;
+    line-height: 1.5em;
+    color: #404040;
+}
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4e53;
+    font-size: 2.2em;
+    line-height: 1.25em;
+    text-align: center;
+}
+h5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.41em;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #4f4e53;
+    margin: 0px;
+}
+
+/* -------- */
+.container{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 4%;
+    padding-top: 6%;
+}
+
+#top-section{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-left{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 40%;
+}
+
+#top-left>h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #4f4e53;
+    margin-bottom: 2%;
+}
+
+#top-left>div{
+    margin-bottom: 10%;
+}
+#top-left>div>h4{
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4e53;
+    font-size: 1.76em;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.signupBtn{
+    padding: 3% 10%;
+    background-color: #ff763f;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 15%);
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: white;
+    font-weight: 600;
+    
+}
+.signupBtn+p{
+    margin-top: 6%;
+}
+#top-right{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 50%;
+    
+}
+
+#top-right>img{
+    width: 85%;
+}
+/* As Seen On */
+#asSeenOn>h5{
+    text-align: center;
+}
+#mediaIcons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin-top: 1%;
+}
+
+#mediaIcons img{
+    width: 45%;
+}
+#mediaIcons>img:nth-child(1){
+    justify-self: end;
+}
+
+#mediaIcons>img:nth-child(2){
+    justify-self: center;
+}
+
+#app-store-icons{
+    text-align: center;
+    padding-top: 4%;
+}
+#app-store-icons>div:nth-child(2){
+    padding-top: 20px;
+}
+#app-store-icons>div:nth-child(2) img{
+    width: 12%;
+    margin-right: 5px;
+}
+
+/* Section - nutrition */
+.section-nutrition{
+    padding: 6% 0;
+    background-color: #f8f8f8;
+}
+#nutrition-first>div{
+    width: 34%;
+    margin: auto;
+    text-align: center;
+}
+
+#nutrition-second{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 9%;
+    text-align: center;
+    padding-top: 5%;
+}
+#million-user-icon{
+    width: 28%;
+}
+#accurate-data-icon{
+    width: 24%;
+}
+#data-privacy-icon{
+    width: 26%;
+}
+
+/* Healthy Habit section */
+#healthy-first>h5{
+    text-align: center;
+    width: 41%;
+    margin: auto;
+}
+#healthy-second{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-column-gap: 2%;
+    grid-row-gap: 15%;
+    text-align: center;
+    margin-top: 6%;
+}
+#healthy-second>div>img{
+    width: 25%;
+}
+#healthy-second>div>h5{
+    font-weight: 700;
+    width: 58%;
+    margin: auto;
+}
+#healthy-second>div>p{
+    width: 80%;
+    margin: auto;
+}
