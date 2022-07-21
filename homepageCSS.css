@@ -15,6 +15,15 @@ h3 {
     line-height: 1.25em;
     text-align: center;
 }
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4e53;
+    font-size: 1.76em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
 h5{
     font-family: 'Open Sans', sans-serif; 
     font-size: 1.41em;
@@ -166,7 +175,7 @@ h5{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,auto);
     grid-column-gap: 2%;
-    grid-row-gap: 15%;
+    grid-row-gap: 70px;
     text-align: center;
     margin-top: 6%;
 }
@@ -182,3 +191,197 @@ h5{
     width: 80%;
     margin: auto;
 }
+
+/* Food Dilivery App section */
+.food-diary{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    background-color: #f8f8f8;
+}
+.food-diary > div{
+    margin-top:4em;
+}
+.food-diary > div > h4{
+    font-weight: 600;
+    width: 45%;
+    margin: auto;
+}
+.food-diary > div > .signupBtn{
+    padding: 1.2% 6%;
+}
+
+/* Sync with Device */
+
+.syncCornometer{
+    text-align: center;
+    width: 80%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin: auto;
+    border-bottom: 1px solid #4f4e53;;
+}
+.syncCornometer>h3{
+    font-weight: 600;
+}
+
+.syncCornometer>h5{
+    margin-top: 20px;
+}
+
+.syncCornometer>img{
+    width: 75%;
+    margin-top: 40px;
+}
+
+/* Customer Review */
+.customer-review{
+    width: 80%;
+    margin: auto;
+}
+
+.customer-review-header{
+    text-align: center;   
+    margin-top: 6%;
+}
+
+.customer-review-block{
+    margin-top: 6%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 8px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 70px;
+    padding: 4%;
+}
+..review-block-one{
+    padding-top: 4em;
+}
+.review-block-one > img{
+    width: 10%;
+}
+.review-block-one>h4{
+    color: #ff763f;
+    text-align: left;
+    margin-top: -1em;
+    padding-left: 1.5em;
+    font-weight: 600;
+}
+
+#review-apple-img{
+    text-align: center;
+    margin-top: 3em;
+}
+#review-apple-img img{
+    width: 164px;
+}
+
+.review-block-two > p+p{
+    color: #5c5c5c;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+}
+
+#customer-review-block-two{
+    margin-top: 4em;
+}
+
+/* Cronometer Professional */
+.crono-professional-section{
+    margin-top: 4em;
+    padding: 4em 0;
+    background-color: #f8f8f8;
+}
+.crono-professional{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    grid-template-rows: repeat(2,auto);
+    gap: 10px;
+   
+}
+
+.crono-professional>div:nth-child(1){
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.crono-professional>div:nth-child(1) >img{
+ width: 75%;
+}
+.crono-professional>div:nth-child(2){
+    height: auto;
+    text-align: center;
+}
+.crono-professional>div:nth-child(2) >img{
+    width: 30%;
+   }
+   .crono-professional>div:nth-child(2) > img+h5{
+    margin-top: 20px;
+   }
+   .crono-professional>div:nth-child(2) > h5+h5{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+   }   
+
+   .learnAbtBtn{
+    padding: 13px 50px;
+    color: #ff763f;
+    border: 0.5px solid black;
+    font-size: 1.25em;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: white;
+   }
+   .learnAbtBtn:hover{
+    background-color: #e6e6e6;
+   }
+
+   /* We are Canadian */
+   .canadian-section{
+    text-align: center;
+    margin-bottom: 9em;
+   }
+
+   .canadian-section > h5{
+    width: 45%;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 15px;
+    }
+
+   #canadian-img > img{
+        width: 77%;
+   }
+
+   #canadian-img+p{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+   }
+   #canadian-img + p > a{
+    color: #262626;
+    text-decoration: underline;
+   }
+   .canadian-section > p+a{
+    padding: 13px 70px;
+   }
+
+   .affiliate-txt{
+    text-align: center;
+   }
+   .affiliate-txt > h5{
+    margin-top: 2.5em;
+    margin-bottom: 40px;
+   }
+
+   
