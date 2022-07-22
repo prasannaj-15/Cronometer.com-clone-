@@ -1,0 +1,315 @@
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+/* Header */
+.container{
+    width:80%;
+    margin:auto
+}
+
+.top-header > h2{
+    font-size: 22px;
+    color: #404040;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+p{
+    color: #404040;
+}
+
+/* Plan section */
+.plan-section{
+    height: auto;
+    display: flex;
+}
+
+.plan-section > div{
+    width: 50%;
+}
+
+#individuals > h4, #professionals > h4{
+    text-align: center;
+}
+.individual-border-div{
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    width: 250px;
+    height: 30px;
+    margin: auto;
+}
+
+/* Plans */
+.plans{
+    display: flex;
+}
+
+.plans > .plans-body{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+/* Plans card */
+
+.plans-card{
+    height: 425px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 3px 25px #eee;
+    background-color: #fbfbfa ;
+}
+
+.planBtn{
+    position: absolute;
+    bottom: 25px;
+
+}
+.plans-card img{
+    margin-top: 20px;
+    width: 35px;
+    height: 45px;
+}
+
+.card-price{
+    color: #4f4e53;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.card-price + p, .card-price + p + p{
+    font-size: 12px;
+    color: #4f4e53;
+    margin-top: 5px;
+}
+
+.card-price + p + p{
+    padding: 0 80px;
+}
+.plans-card > .plan-desc{
+    padding: 0 39px;
+}
+
+#enterprise-para{
+    margin: 30px 30px 0 30px;
+}
+
+.plans-card > .planBtn{
+    background-color: #d3e6f8;
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* Plans Description */
+.plans-card-desc{
+    border-right: 1px solid #ccc;
+    margin-top: 30px;
+}
+.plans-card-desc li{
+    text-align: left;
+    padding: 0 20px 15px 0;
+
+}
+
+/* Individual Gold  */
+
+.subscribeBtn-section{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+}
+
+.subscribeBtn{
+    color: #fff;
+    border: 1px solid #ff763f;
+    background: #ff763f;
+    box-shadow: none;
+    padding: 3px 60px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.plans-card-desc-title{
+    font-weight: 600;
+}
+
+#proBtn{
+    background-color: #67ac5b;
+    border: 1px solid #67ac5b;
+}
+
+#enterpriseBtn{
+    background-color: #fff;
+    color: #67ac5b;
+    border: 1px solid #67ac5b;
+}
+
+/* FAQ section */
+
+.FAQ > h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #cf4b17;
+    padding: 0 0 30px 0;
+}
+.accordion {
+    background-color: #fff;
+    border-top: 0;
+    border-bottom: 1px solid #404040;
+    border-left: 0;
+    border-right: 0;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    /* border: none; */
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+
+  #first-acc{
+    border-top: 1px solid #404040;
+  }
+  
+  .active, .accordion:hover {
+    color: #888;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* Footer */
+
+  .footer-nav{
+    margin-top: 3em;
+    text-align: center;
+  }
+  .footer-nav ul > li{
+    display: inline-block;
+    list-style-type: none;
+  }
+  .footer-nav ul > li a{
+    color: #4F4E53;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 2px 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .footer-nav ul > li a:hover{
+    background-color: #F8F5F2;
+  }
+  .footer-nav .orange-dot{
+    background: #FF763F;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 2px 0;
+  }
+  
+  /* footer-main-container */
+.footer-main-container{
+    height: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100%);
+    background-color: #4F4E53;
+    padding: 30px 30px 60px 30px;
+}
+
+/* .footer-main-container div{
+    border: 1px solid blue;
+    height: 100%;
+} */
+
+#footer-first-div img{
+    width: 24%;
+    margin-right: 5px;
+}
+
+#footer-second-div{
+    text-align: center;
+}
+#footer-second-div img{
+    width: 200px;
+}
+#footer-second-div > p{
+    color: #fff;
+    font-size: 10px;
+}
+
+#footer-second-div > p:hover{
+    color: #cf4b17;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: end;
+}
+#footer-third-div .social-icons a > div{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.social-icons .facebook{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-facebook-white.png");
+    background-size: cover;
+}
+.social-icons .twitter{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-twitter-white.png");
+    background-size: cover;
+}
+
+.social-icons .instagram{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-instagram-white.png");
+    background-size: cover;
+
+}
+.social-icons .youtube{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-youtube-white.png");
+    background-size: cover;
+}
+
+.social-icons .facebook:hover{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-facebook-orange.png");
+}
+
+.social-icons .twitter:hover{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-twitter-orange.png");
+}
+
+.social-icons .instagram:hover{
+    background-image: url("https://cdn1.cronometer.com/logos/icon-instagram-orange.png");
+}
+
+.social-icons .youtube:hover{
+    background-image: url("    https://cdn1.cronometer.com/logos/icon-youtube-orange.png");
+}
