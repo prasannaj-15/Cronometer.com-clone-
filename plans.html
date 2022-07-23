@@ -8,6 +8,61 @@
     <title>Plans page</title>
 </head>
 <body>
+    <!-- Plan nav-bar -->
+    <div class="plan-nav">
+        <div>
+            <img src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" alt="">
+            <div>
+                <button id="plan-toggle" onmouseover="planToggleFun()" onmouseout="planToggleOutFun()"> <span>&#8964;</span> </button>
+            
+            </div>
+            
+            <div id="plan-small-toggle" class="plan-small-toggle">
+                <div>
+                    <p>username@gmail.com</p>
+                    <div><button class="logoutBtn">Logout</button></div>
+                    
+                </div>
+                <div class="plans-toggle">
+                    <div class="toggle-gold">
+                        <div>
+                            <h2>Gold</h2>
+                            <p>$49.99/year</p>
+                        </div>
+                        <div>
+                            <p> Our premium features like Timestamps and Food Suggestion will help you plan, customize and share your perfect diet. </p>
+                        </div>
+                        <div>
+                            <p>Learn More</p>
+                        </div>
+                    </div>
+                    <div class="toggle-proff">
+                        <div>
+                            <h2>Gold</h2>
+                            <p>$49.99/year</p>
+                        </div>
+                        <div>
+                            <p> Our premium features like Timestamps and Food Suggestion will help you plan, customize and share your perfect diet. </p>
+                        </div>
+                        <div>
+                            <p>Learn More</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Diary</a></li>
+                <li><a href="">Trends</a></li>
+                <li><a href="">Foods</a></li>
+                <li><a href="">Settings</a></li>
+                <li class="nav-active"><a href="">Plans</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- Plans Header -->
     <div class="container">
         <div class="top-header">
@@ -53,14 +108,14 @@
                             <h2 class="card-price">$49.99</h2>
                             <p>USD/Year</p>
                         <div class="subscribeBtn-section">
-                            <span><input type="radio" name="annual" id="">
+                            <span><input type="radio" name="goldradio" id="annual">
                             <label for="annual"> Annual</label>
                             </span>
-                            <span><input type="radio" name="monthly" id="">
+                            <span><input type="radio" name="goldradio" id="monthly">
                                 <label for="annual">Monthly</label>
                                 </span>
                                 <div class="subscribeBtn-div">
-                                    <button class="subscribeBtn">Subscribe Now</button>
+                                    <button class="subscribeBtn" id="goldBtn" onclick="openGoldPopup()">Subscribe Now</button>
                                 </div>
                         </div>
                     </div>
@@ -139,7 +194,7 @@
                                     $2.25/client per month</p>
                                     <div class="subscribeBtn-section">
                                         <div class="subscribeBtn-div">
-                                            <button class="subscribeBtn" id="proBtn">Subscribe Now</button>
+                                            <button class="subscribeBtn" id="proBtn" onclick="openProPopup()">Subscribe Now</button>
                                         </div>
                                     </div>
                                     
@@ -158,6 +213,7 @@
                                 <li>List your business on our <a href="#">public directory</a> of professional services</li>
                                 <li>Webinar Access for Professionals</li>
                             </ul>
+                            <button id="learnBtn">Learn More</button>
                         </div>
                     </div>
                     <div class="plans-body">
@@ -295,22 +351,154 @@
             </div>
         </div>
     </footer>
+
+<!-- Pop-Up Section -->
+<!-- Gold Plan Annual Pop-up -->
+<div class="container">
+    <div class="popUp" id="popUpGoldAnual">
+        <div class="popImg">
+            <img src="https://cdn1.cronometer.com/logos/cronometer-logo-gold.png" alt="">
+            <p>GOLD</p>
+        </div>
+        <div class="gold-pop-top-price">
+            <div><p>Gold Annual</p></div>
+            <div><p>USD $49.99</p></div>
+            
+        </div>
+        <form action="" class="form" id="payment-form">
+            <div class="payment-input">
+                <input type="number" name="card-number" id="cardNo" placeholder="Card Number">
+                <input type="date" name="expdate" id="expdate">
+                <input type="number" name="cvv" id="cvv" placeholder="CVC">
+            </div>
+        </form>
+        <div class="pop-top-price" id="pop-bottom-price">
+            <div>
+                <p> Secure payments <br>
+                    powered by 
+                </p>
+            </div>
+            <div>
+                <P>PRO: <span id="pro-price">$49.99</span></P>
+                <p>TOTAL: <span id="pro-total-price">USD $49.99</span></p>
+            </div>
+        </div>
+    
+        <div>
+            <p>You can cancel at any time in your Account Settings.</p>
+        </div>
+        <div class="popup-btn">
+            <button type="button" onclick="closeGoldPopup()" class="popup-cancle">Cancel</button>
+            <button type="button" class="popup-subscribe">PAY NOW</button>
+        </div>        
+    </div>
+</div>
+
+<!-- Gold Plan Monthly Pop-up -->
+<div class="container">
+    <div class="popUp" id="popUpGoldMonthly">
+        <div class="popImg">
+            <img src="https://cdn1.cronometer.com/logos/cronometer-logo-gold.png" alt="">
+            <p>GOLD</p>
+        </div>
+        <div class="gold-pop-top-price">
+            <div><p>Gold Monthly</p></div>
+            <div><p>USD $49.99</p></div>
+            
+        </div>
+        <form action="" class="form" id="payment-form">
+            <div class="payment-input">
+                <input type="number" name="card-number" id="cardNo" placeholder="Card Number">
+                <input type="date" name="expdate" id="expdate">
+                <input type="number" name="cvv" id="cvv" placeholder="CVC">
+            </div>
+        </form>
+        <div class="pop-top-price" id="pop-bottom-price">
+            <div>
+                <p> Secure payments <br>
+                    powered by 
+                </p>
+            </div>
+            <div>
+                <P>PRO: <span id="pro-price">$8.99</span></P>
+                <p>TOTAL: <span id="pro-total-price">USD $8.99</span></p>
+            </div>
+        </div>
+    
+        <div>
+            <p>You can cancel at any time in your Account Settings.</p>
+        </div>
+        <div class="popup-btn">
+            <button type="button" onclick="closeGoldPopup()" class="popup-cancle">Cancel</button>
+            <button type="button" class="popup-subscribe">PAY NOW</button>
+        </div>        
+    </div>
+</div>
+<!-- Pro Plan Pop-up -->
+
+<div class="container">
+    <div class="popUp" id="proPlanPopUp">
+        <h1>PRO</h1>
+        <div class="pop-top-price">
+            <div>
+                <h1>$29.95</h1>
+                <p>USD/Month</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Billed Monthly</li>
+                    <li>Up to 10 clients.</li>
+                    <li>Add unlimited clients for $2.25/client per month.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-div">
+            <p>* Required Information</p>
+            <form action="" class="form" id="info-form">
+                <label for="name">* Your Full Name</label><br>
+                <input type="text" name="name" placeholder="John Doe">
+
+                <label for="cname">Company Name</label><br>
+                <input type="text" name="cname" placeholder="This helps us to understand your need">
+
+                <label for="website">Company Website</label><br>
+                <input type="text" name="website" placeholder="www.emample.com">
+
+                <label for="phone">Your Phone Number</label><br>
+                <input type="number" name="phone" id="phoneNo" placeholder="(201) 555-0123">
+            </form>
+            <form action="" class="form" id="payment-form">
+                <div class="payment-input">
+                    <input type="number" name="card-number" id="cardNo" placeholder="Card Number">
+                    <input type="date" name="expdate" id="expdate">
+                    <input type="number" name="cvv" id="cvv" placeholder="CVC">
+                </div>
+            </form>
+        </div>
+
+        <div class="pop-top-price" id="pop-bottom-price">
+            <div>
+                <p> Secure payments <br>
+                    powered by 
+                </p>
+            </div>
+            <div>
+                <P>PRO: <span id="pro-price">$29.95</span></P>
+                <p>TOTAL: <span id="pro-total-price">USD $29.95</span></p>
+            </div>
+        </div>
+
+        <div>
+            <p>Pay only $2.25/client per month after 10 clients</p>
+        </div>
+        <div class="popup-btn">
+            <button type="button" onclick="closeProPopup()" class="popup-cancle">Cancel</button>
+            <button type="button" class="popup-subscribe">Subscribe</button>
+        </div>
+        
+    </div>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+    
