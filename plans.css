@@ -2,6 +2,142 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
+
+/* Plan Navbar */
+.plan-nav{
+    display: flex;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+
+}
+.plan-nav > div:nth-child(1){
+    width: 30%;
+    display: flex;
+}
+.plan-nav > div:nth-child(1) > div{
+ padding-top: 15px;
+}
+.plan-nav > div:nth-child(2){
+    width: 70%;
+}
+
+.plan-nav > div img{
+    width: 200px;
+}
+.plan-nav > div:nth-child(2) > ul{
+    display: flex;
+    gap: 2em;
+    font-size: 16px;
+}
+
+.plan-nav > div:nth-child(2) > ul > li{
+    list-style: none;
+}
+.plan-nav > div:nth-child(2) > ul > li > a{
+    text-decoration: none;
+    color: #E65F29;
+}
+.plan-nav > div:nth-child(2) > ul > .nav-active >a{
+    color: #cf4b17;
+}
+
+
+
+/* Plan nav toggle part */
+
+#plan-toggle {
+    border: 0;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    color: #cf4b17;
+    margin-left: 5px;
+    /* background-image: url(""); */
+}
+.plan-small-toggle{
+    position: absolute;
+    left: 3%;
+    top: 14%;
+    visibility: hidden;
+    border: 1px solid #cf4b17;
+    width: 400px;
+    background-color: #fff;
+    z-index: 1;
+    
+}
+
+.plan-small-toggle-on{
+    visibility: visible;
+}
+
+.plan-small-toggle >div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.plan-small-toggle >div:nth-child(1) > div{
+    padding-top: 10px;
+}
+.plan-small-toggle >div:nth-child(1) p{
+    font-size: 10px;
+}
+.plan-small-toggle >div:nth-child(1)  button {
+    padding: 2px 15px;
+    background-color: #fff;
+    border: 1px solid #cf4b17;
+    color: #cf4b17;
+}
+
+#plan-small-toggle >div:nth-child(1)  button:hover{
+    background-color: #ccc;
+
+}
+
+.plans-toggle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 10px;
+    
+}
+
+.plans-toggle > div{
+    border: 1px solid #ebeae6;
+    background-color: #faf9f7;
+    border-radius: 3px;
+    padding: 5px;
+}
+.plans-toggle > div:hover{
+    border: 1px solid #ff763f;
+}
+
+.toggle-gold > div,
+.toggle-proff >div{
+    display: flex;
+    justify-content: space-around;
+}
+.toggle-gold > div > h2, 
+.toggle-proff >div >h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+.toggle-gold > div:nth-child(2) > p,
+.toggle-proff >div:nth-child(2) > p
+{
+    font-size: 10px;
+}
+
+.toggle-gold > div:nth-child(3),
+.toggle-proff >div:nth-child(3){
+    display: flex;
+    justify-content: end;
+}
+
+.toggle-gold > div:nth-child(3) > p,
+.toggle-proff >div:nth-child(3) > p{
+    color: #E65F29;
+}
 /* Header */
 .container{
     width:80%;
@@ -144,6 +280,18 @@ p{
     border: 1px solid #67ac5b;
 }
 
+#learnBtn{
+    background-color: #fff;
+    color: #67ac5b;
+    border: 1px solid #67ac5b;
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#learnBtn:hover{
+    background-color: #ccc;
+
+}
 #enterpriseBtn{
     background-color: #fff;
     color: #67ac5b;
@@ -311,5 +459,169 @@ p{
 }
 
 .social-icons .youtube:hover{
-    background-image: url("    https://cdn1.cronometer.com/logos/icon-youtube-orange.png");
+    background-image: url("https://cdn1.cronometer.com/logos/icon-youtube-orange.png");
+}
+
+/* PopUp Css */
+/* Gold Plan */
+
+.popImg{
+    text-align: center;
+}
+.popImg >p{
+    font-weight: bold;
+}
+.popImg > img{
+    width: 180px;
+}
+.gold-pop-top-price{
+    display: flex;
+    justify-content: space-between;
+}
+.gold-pop-top-price > div > p{
+    padding-bottom: 0;
+}
+
+/* Pro-plan */
+
+.popUp{
+    width: 570px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    /* text-align: center; */
+    padding: 30px;
+    color: #444;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 70%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popUpGoldMonthly, #popUpGoldAnual{
+    top: 45%;
+}
+.popUp > h1{
+    text-align: center;
+}
+.popUp button{
+    padding: 10px 80px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Inside Pop-up Css */
+.pop-top-price{
+    display: flex;
+    border: 1px solid #67ac5b;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+.pop-top-price>div:nth-child(1){
+    width: 40%;
+    text-align: center;
+}
+.pop-top-price>div:nth-child(1) > h1{
+    margin-bottom: 0;
+    color: #4f4e53;
+}
+.pop-top-price>div:nth-child(1) > p{
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4f4e53;
+}
+.pop-top-price>div:nth-child(2){
+    width: 60%;
+    padding: 0 20px;
+}
+
+.form{
+    border: 1px solid #4f4e5382;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+.form > input{
+    width: -webkit-fill-available;
+    padding: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #4f4e5382;
+    outline: none;
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: #f8f8f8;
+}
+
+#payment-form{
+    margin: 15px 0;
+}
+.form .payment-input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #4f4e5382;
+}
+.form .payment-input > input{
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    background-color: #f8f8f8;
+}
+.form .payment-input > input:nth-child(1){
+    width: 60%;
+}
+.form .payment-input > input:nth-child(2){
+    width: 10%;
+}
+.form .payment-input > input:nth-child(3){
+    width: 10%;
+}
+
+#pop-bottom-price > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+#pop-bottom-price > div:nth-child(1) >p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+#pop-bottom-price > div:nth-child(2){
+    text-align: end;
+}
+
+#pop-bottom-price + div >p{
+    text-align: center;
+}
+
+.popup-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-btn .popup-cancle{
+    background-color: #fff;
+    border: 1px solid #67ac5b;
+}
+
+.popup-btn .popup-subscribe{
+    pointer-events: none;
+    background-color: #888;
+    color: #fff;
 }
